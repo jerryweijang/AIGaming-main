@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;  // 改為環境變數
 
 // Serve static files
 app.use(express.static('./'));
